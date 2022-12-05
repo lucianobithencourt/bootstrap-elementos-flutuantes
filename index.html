@@ -31,6 +31,26 @@
         #borda-float {
             border: 2px solid navy;
         }
+
+        #small{
+            margin-bottom: 2px;
+            border: 2px solid red;
+        }
+
+        #medium{
+            margin-bottom: 2px;
+            border: 2px solid rgb(78, 1, 59);
+        }
+
+        #large{
+            margin-bottom: 2px;
+            border: 2px solid rgb(241, 141, 10);
+        }
+
+        #extra-large{
+            margin-bottom: 2px;
+            border: 2px solid rgb(0, 255, 55);
+        }
     </style>
 
     <title>Elementos Flutuantes</title>
@@ -62,21 +82,38 @@
     </div>
 
     </div>
+    <hr>
+
+<h3 class="fixed-bottom">Posicionamento fixo na tela top bottom</h3> <br> [class="fixed-top,bottom"]
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta officiis harum nulla expedita. Expedita corrupti assumenda esse accusamus repellat laboriosam voluptatibus, neque impedit ab cupiditate aliquid, dolorem quia at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem repellendus vel dolorem tempora veniam perferendis minima est. Voluptate in provident libero reiciendis. Culpa, adipisci voluptate nobis hic omnis corrupti officiis.</p>
+
+
 
     <hr>
 
-    <h1 class="display-4 text-center font-weight-bold">Posicionamento responsivo
+    <h3 class="display-4 text-center font-weight-bold">Posicionamento responsivo
 
-    </h1>
+    </h3>
+
+
+    <hr>
+
+
+
     <!-- Common breakpoints are 
         320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens laptop, 1025px — 1200px for Desktops,
         1201px - for extra large screens like TV. -->
-        <h4>[class="float-tela-posicao"]</h4>
-        
-    <div class="float-sm-right">small[sm]</div>
-    <div class="float-sm-right">medium[md]</div>
-    <div class="float-sm-right">large[lg]</div>
-    <div class="float-sm-right">extra-large[xl]</div>
+        <h3[class="float-tela-posicao"]</h4>
+
+    <div id="small" class="float-sm-right">small[sm-320px — 480px]</div>
+
+
+    <div id="medium" class="float-md-left">medium[md-481px — 768px]</div>
+
+    <div id="large" class="float-lg-right">large[lg-769px — 1024px]</div>
+
+    <div id="extra-large" class="float-xl-right">extra-large[xl-1025px — 1200px]</div>
 
 
 
