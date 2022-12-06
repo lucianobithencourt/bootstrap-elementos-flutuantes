@@ -13,46 +13,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-weight: bold;
-        }
-        
-        body {
-            margin-left: 10px;
-        }
-        
-        .display-4 {
-            color: purple
-        }
-        
-        #borda-float {
-            border: 2px solid navy;
-        }
-
-        #small{
-            margin-bottom: 2px;
-            border: 2px solid red;
-        }
-
-        #medium{
-            margin-bottom: 2px;
-            border: 2px solid rgb(78, 1, 59);
-        }
-
-        #large{
-            margin-bottom: 2px;
-            border: 2px solid rgb(241, 141, 10);
-        }
-
-        #extra-large{
-            margin-bottom: 2px;
-            border: 2px solid rgb(0, 255, 55);
-        }
-    </style>
-
+    <!-- Estilo personalizado -->
+<link rel="stylesheet" href="bootstrap/css/style.css">
     <title>Elementos Flutuantes</title>
 
 
@@ -60,60 +22,84 @@
 
 <body>
 
-    <!-- Elementos Flutuantes [class="float-right,left,none"]   -->
+    <!-- Elementos Flutuantes   -->
 
-    <h1 class="display-4 text-center font-weight-bold">Elementos Flutuantes</h1>
+    <h3 id="flutuantes" class="display-4 text-center font-weight-bold">Elementos Flutuantes</h3>
+    <h4>
+        <pre>
+            <code>
+                &lt; div class="clearfix"&gt; <br>
+                 &lt; div class="float-right"&gt;
+                 
+                 
+                 
+                 &lt;/div&gt; <br>
+                    &lt; div class=float-left&gt; 
+                    
 
-    <pre>
-        <code>
-            &lt; div class="clearfix"&gt; <br>
-             &lt; div class="float-right"/div&gt; <br>
-                &lt; div class=float-left /div &gt; <br>
-                /div &gt;
 
-        </code>
-    </pre>
+                    &lt;/div &gt; <br>
+                    /div &gt;
+            </code>
+        </pre>
+    </h4>
 
-    <div id="borda-float" class="clearfix">
+    <div id=borda class="clearfix">
+        <div id="f-left" class="float-left bg-warning">Float Left</div>
 
-        <div class="float-left bg-success">Float Left</div>
-
-        <div class="float-right bg-warning">Float Right</div>
+        <div id="f-right" class="float-right bg-danger">Float Right</div>
     </div>
 
     </div>
-    <hr>
+<br><br>
+    <h3 id="fixo" class="display-4 text-center font-weight-bold ">Posicionamento fixo</h3>
+    <h3>[class="fixed-top ou fixed-bottom"]</h3>
 
-<h3 class="fixed-bottom">Posicionamento fixo na tela top bottom</h3> <br> [class="fixed-top,bottom"]
+    <br><br>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta officiis harum nulla expedita. Expedita corrupti assumenda esse accusamus repellat laboriosam voluptatibus, neque impedit ab cupiditate aliquid, dolorem quia at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem repellendus vel dolorem tempora veniam perferendis minima est. Voluptate in provident libero reiciendis. Culpa, adipisci voluptate nobis hic omnis corrupti officiis.</p>
+    <h3 id="resposivel" class="display-4 text-center font-weight-bold ">Float Responsivo</h3>
+    <h3>[class="float-screen-direcao"]</h3>
+
+    <div id="small" class="float-sm-right">- small - <br> [320px — 480px]</div>
+
+    <div id="medium" class="float-md-right">- medium - <br> [481px — 768px]</div>
+
+    <div id="large" class="float-lg-right">- large - <br>[769px — 1024px]</div>
+
+    <div id="extra-l" class="float-xl-right">- extra-large - <br> [1025px — 1200px ]</div>
+
+    <br><br>
+    <h3 id="colagem" class="display-4 text-center font-weight-bold " >Colagem no topo "sticky-top"</h3>
+    <h4>usado com menus de navegação</h4>
+
+    <ul class="list-inline bg-primary sticky-top text-white text-center ">
+        <li class="list-inline-item" >item</li>
+        <li class="list-inline-item" >item</li>
+        <li class="list-inline-item" >item</li>
+        <li class="list-inline-item" >item</li>
+        <li class="list-inline-item" >item</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque perferendis earum veritatis molestias dicta optio sed in. Voluptatibus temporibus totam distinctio sunt aliquid aperiam, aut, nihil placeat velit architecto consectetur!</p>
 
 
 
-    <hr>
-
-    <h3 class="display-4 text-center font-weight-bold">Posicionamento responsivo
-
-    </h3>
-
-
-    <hr>
 
 
 
-    <!-- Common breakpoints are 
-        320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens laptop, 1025px — 1200px for Desktops,
-        1201px - for extra large screens like TV. -->
-        <h3[class="float-tela-posicao"]</h4>
-
-    <div id="small" class="float-sm-right">small[sm-320px — 480px]</div>
 
 
-    <div id="medium" class="float-md-left">medium[md-481px — 768px]</div>
 
-    <div id="large" class="float-lg-right">large[lg-769px — 1024px]</div>
 
-    <div id="extra-large" class="float-xl-right">extra-large[xl-1025px — 1200px]</div>
 
 
 
